@@ -1,0 +1,20 @@
+div.services {
+  h2 {
+    font-size: map-get($map: $heading-font-size, $key: h2);
+  }
+}
+
+.services-list {
+  padding: 0;
+  li {
+    text-align: center;
+    h3 {
+      margin-bottom: 20px;
+      font-size: map-get($map: $heading-font-size, $key: h3);
+    }
+    p {
+      color: $white;
+      font-size: $paragraph-font-size-services;
+    }
+  }
+}

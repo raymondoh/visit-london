@@ -3,7 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  @include border-box;
 }
 
 html {
@@ -12,18 +12,30 @@ html {
 }
 
 body {
-  box-sizing: border-box;
-  font-family: "Robote", sans-serif;
-  color: $textColor;
-  background: mediumslateblue;
+  //box-sizing: border-box;
+  box-sizing: inherit;
+  color: $text-color;
+  background: $bg-color;
+  font-size: $paragraph-font-size;
+  //font-family: $paragraph-font-family;
+  font-family: "Open Sans", sans-serif;
 }
 
 img {
-  max-height: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 ::selection {
   background-color: red;
   color: white;
+}
+
+a {
+  text-decoration: none; //for the underline
+  color: $white;
+}
+
+li {
+  list-style-type: none; // removed underline
 }

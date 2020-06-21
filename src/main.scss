@@ -1,22 +1,27 @@
-$primary: yellow;
-$danger: purple;
-@import "~bootstrap/scss/bootstrap";
-body {
-  background-color: red;
-  //background-image: url("./assets/webpack.svg") no-repeat;
-}
-.test {
-  height: 50px;
-  width: 50px;
-  //background-image: url("./assets/images/webpack.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
+//@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
 //@import "~bootstrap/scss/normalize";
 @import "styles/test";
 @import "styles/base/variables";
 @import "styles/base/mixins";
 @import "styles/base/global";
+@import "styles/base/grid";
+@import "styles/base/layout";
+@import "styles/base/typography";
 
 @import "styles/components/button";
+@import "styles/components/navigation";
+@import "styles/components/background";
+@import "styles/components/card";
+@import "styles/components/gallery";
+@import "styles/components/table";
+@import "styles/components/services";
+@import "styles/components/footer";
+
+.ImageTest {
+  // height: 50px;
+  // width: 50px;
+  // background-image: url("images/webpack.svg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+}

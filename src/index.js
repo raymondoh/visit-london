@@ -1,4 +1,5 @@
 import App from "./js/App";
+//import "bootstrap";
 import "./main.scss";
 
 if (module.hot) {
